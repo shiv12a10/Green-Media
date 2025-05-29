@@ -89,7 +89,7 @@ const Dashboard = ({ userRole, onLogout }) => {
     {
       date: '2024-01-15',
       articleId: 'A001',
-      follow: 'In Progress',
+      DCDM: 'DM',
       acceptanceDate: '2024-01-10',
       common1: 'Data 1',
       common2: 'Data 2',
@@ -99,12 +99,11 @@ const Dashboard = ({ userRole, onLogout }) => {
       feeJournalName: 'Nature',
       university: 'MIT',
       articleTitle: 'AI in Healthcare',
-      dcDm: 'DC-123'
     },
     {
       date: '2024-01-16',
       articleId: 'A002',
-      follow: 'In Progress',
+      DCDM: 'DC',
       acceptanceDate: '2024-01-11',
       common1: 'Data 1',
       common2: 'Data 2',
@@ -114,12 +113,11 @@ const Dashboard = ({ userRole, onLogout }) => {
       feeJournalName: 'Science',
       university: 'IBM',
       articleTitle: 'Quantum Computing Advances',
-      dcDm: 'DC-124'
     },
     {
       date: '2024-01-17',
       articleId: 'A003',
-      follow: 'In Progress',
+      DCDM: 'DM',
       acceptanceDate: '2024-01-12',
       common1: 'Data 1',
       common2: 'Data 2',
@@ -129,7 +127,6 @@ const Dashboard = ({ userRole, onLogout }) => {
       feeJournalName: 'PNAS',
       university: 'NOAA',
       articleTitle: 'Climate Modeling',
-      dcDm: 'DC-125'
     }
   ]
 
@@ -366,7 +363,7 @@ const Dashboard = ({ userRole, onLogout }) => {
                     <tr>
                       <th>Date</th>
                       <th>Article ID</th>
-                      <th>Follow</th>
+                      <th>Follow(DC/DM)</th>
                       <th>Acceptance Date</th>
                       <th>Common-1</th>
                       <th>Common-2</th>
@@ -376,7 +373,6 @@ const Dashboard = ({ userRole, onLogout }) => {
                       <th>Fee Journal Name</th>
                       <th>University</th>
                       <th>Article Title</th>
-                      <th>DC/DM</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -384,7 +380,7 @@ const Dashboard = ({ userRole, onLogout }) => {
                       <tr key={index}>
                         <td>{item.date}</td>
                         <td>{item.articleId}</td>
-                        <td>{item.follow}</td>
+                        <td>{item.DCDM}</td>
                         <td>{item.acceptanceDate}</td>
                         <td>{item.common1}</td>
                         <td>{item.common2}</td>
@@ -394,7 +390,6 @@ const Dashboard = ({ userRole, onLogout }) => {
                         <td>{item.feeJournalName}</td>
                         <td>{item.university}</td>
                         <td>{item.articleTitle}</td>
-                        <td>{item.dcDm}</td>
                       </tr>
                     ))}
                   </tbody>
