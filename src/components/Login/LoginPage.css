@@ -1,0 +1,108 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2ff;
+  padding: 20px;
+}
+
+.login-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-card h1 {
+  color: #1a237e;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.login-subtitle {
+  color: #666;
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 14px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.role-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: white;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus,
+.role-select:focus {
+  outline: none;
+  border-color: #1a237e;
+}
+
+.role-select {
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 30px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #304ffe;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #1a237e;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 1.5rem;
+  }
+
+  .login-card h1 {
+    font-size: 20px;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="password"],
+  .role-select {
+    padding: 8px;
+  }
+
+  .login-button {
+    padding: 10px;
+  }
+}
