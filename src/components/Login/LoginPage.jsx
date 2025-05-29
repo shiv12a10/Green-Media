@@ -14,15 +14,12 @@ const LoginPage = ({ onLogin }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // Remove the publication role restriction
     if (formData.role === 'Team Leader') {
       setError('This role is not allowed to login at this time.')
       return
     }
-    // Clear any previous error
     setError('')
-    // Call the onLogin function with the selected role
-    onLogin(formData.role)
+    onLogin(formData.role, formData.username) // Pass the username as email
   }
 
   const handleChange = (e) => {
